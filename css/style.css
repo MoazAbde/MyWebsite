@@ -326,3 +326,56 @@ h3.my-profession{
     line-height: 25px;
     color: var(--text-black-700);
 }
+
+
+/*other vid*/
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* .about__description{
+    text-align: center;
+    margin-bottom: 2.5rem;
+} */
+
+.about .about-content .about__info{
+    display: flex;
+    /* if you want to get rid of the work done section on smaller device uncomment the display below */
+    /* display: none; */
+    flex: 0 0 100%;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    /*Maybe put a min width on this if it don't fit on mobile*/
+}
+.about .about-content .about__info .about__info-title{
+    font-weight: 600;
+}
+.about .about-content .about__info .item{
+    margin-right: 70px;
+}
+span.about__info-title{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-black-900);
+    
+}
+span.about__info-name{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+}
+.about__info-title, .about__info-name{
+    display: block;
+    text-align: center;
+}
+.about .about-content .buttons{
+    /* display: none; */
+    margin-top: 30px;
+}
+.about .about-content .buttons .btn{
+    margin-right: 25px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
