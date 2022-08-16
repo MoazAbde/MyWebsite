@@ -379,3 +379,94 @@ span.about__info-name{
     margin-top: 10px;
     margin-left: 15px;
 }
+
+.skillSection{
+    padding: 2rem 0 4rem;
+}
+@media screen and (min-width: 768px) {
+    .skillSection{
+        padding: 7rem 0 2rem;
+    }
+}
+.section__title, .section__subtitle{
+    text-align: center;
+    color: var(--text-black-900);
+    font-size: 30px;   
+}
+
+@media screen and (min-width: 768px) {
+    .section__subtitle{
+        margin-bottom: 4rem;
+    }
+}
+.section__subtitle{
+    font-size: 1rem;
+    display: block;
+}
+
+/*skills*/
+@media screen and (min-width: 768px) {
+    .skillcont{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.skillcont{
+    max-width: 768px;
+}
+.skills__container{
+    row-gap: 0;
+}
+
+.skills__header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    cursor: pointer;
+}
+.skills__icon, .skills__arrow{
+    font-size: 2rem;
+    color: var(--skin-color);
+}
+
+.skills__icon{
+    margin-right: 0.75rem;
+}
+
+.skills__title{
+    font-size: 1.125rem;
+}
+.skills__subtitle{
+    font-size: 0.913rem;
+    color: var(--text-black-700);
+}
+.skills__arrow{
+    margin-left: auto;
+    transition: 0.4s;
+}
+.skills__title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+.skills__name {
+    font-size: 0.938rem;
+    font-weight: 600;
+}
+
+.skills__bar, .skills__percentage{
+    height: 5px;
+    border-radius: 0.25rem;
+}
+.skills__bar{
+    background-color: var(--bg-black-50);
+    
+}
+.skills__percentage{
+    display: block;
+    background-color: var(--skin-color);
+}
+/* or write it in line (other skills % is in-line styled) */
+.skills_html  {
+    width: 90%;
+}
