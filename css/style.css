@@ -380,6 +380,12 @@ span.about__info-name{
     margin-left: 15px;
 }
 
+.download__icon {
+    font-size: 1.25rem;
+    margin-left: var(--mb-0-5);
+    transition: 0.3s;
+}
+
 .skillSection{
     padding: 2rem 0 4rem;
 }
@@ -469,4 +475,22 @@ span.about__info-name{
 /* or write it in line (other skills % is in-line styled) */
 .skills_html  {
     width: 90%;
+}
+
+.skills__list{
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+}
+
+.skills__close .skills__list{
+    height: 0;
+    overflow: hidden;
+}
+.skills__open .skills__list{
+    height: max-content;
+    margin-bottom: 2.5rem;
+}
+
+.skills__open .skills__arrow{
+    transform: rotate(-180deg);
 }
