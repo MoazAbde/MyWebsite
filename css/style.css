@@ -93,6 +93,14 @@ ul{
     position: relative;
 
 }
+.skill__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+}
+
 .btn{
     font-size: 16px;
     font-weight: 500;
@@ -844,8 +852,19 @@ span.about__info-name{
         flex: 0 0 100%;
         max-width: 100%;
     }
+ 
  }
 
+ /* for the skills row flexbox */
+ @media(max-width:511.5px) {
+
+     /* apply CSS til size is less than or equal to 768px */
+     .skill__row {
+         flex-direction: column;
+         gap: 15px;
+         align-items: center;
+     }
+ }
  @media (max-width:350px) {
     .about .about-content .about__info{
         display: none;
