@@ -24,3 +24,26 @@ var tyoed = new Typed(".typing", {
     BackSpeed:60,
     loop:true
 })
+/* ====================================  Actice Scroll Link =====================================*/
+
+const sections = document.querySelectorAll('section[id]')
+
+function scrollActive(){
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 735;
+        
+        const sectionId = current.getAttribute('id')
+        
+        if(scrollY > sectionTop && scrollY<= sectionTop + sectionHeight)
+        {
+            document.querySelector('.aside a[href*=' + sectionId + ']').classList.add('active')
+        }
+        else{
+            document.querySelector('.aside a[href*=' + sectionId + ']').classList.remove('active')
+        }
+    })
+}
+window.addEventListener('scroll' , scrollActive)
