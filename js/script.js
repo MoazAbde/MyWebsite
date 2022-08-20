@@ -1,3 +1,4 @@
+/* ==================================== Skills Animation =====================================*/
 const skillsContent = document.getElementsByClassName('skills__content'), skillsHeader = document.querySelectorAll('.skills__header')
 
 
@@ -14,4 +15,12 @@ function toggleSkills(){
 
 skillsHeader.forEach((el)=>{
     el.addEventListener('click', toggleSkills)
+})
+
+/* ==================================== typing Animation =====================================*/
+var tyoed = new Typed(".typing", {
+    strings:["","Software Developer", "Web Developer", "UI Designer", "Electrical Engineer"],
+    typeSpeed:100,
+    BackSpeed:60,
+    loop:true
 })

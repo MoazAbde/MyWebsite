@@ -341,7 +341,7 @@ h3.my-profession{
     color: var(--skin-color);
 }
 .about .about-content .about-text p{
-    font-size: 16px;
+    font-size: 20px;
     line-height: 25px;
     color: var(--text-black-700);
 }
@@ -375,13 +375,13 @@ h3.my-profession{
     margin-right: 70px;
 }
 span.about__info-title{
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 600;
     color: var(--text-black-900);
     
 }
 span.about__info-name{
-    font-size: 16px;
+    font-size: 20px;
     line-height: 25px;
     color: var(--text-black-700);
 }
@@ -425,7 +425,7 @@ span.about__info-name{
     }
 }
 .section__subtitle{
-    font-size: 1rem;
+    font-size: 1.1rem;
     display: block;
 }
 
@@ -695,6 +695,11 @@ span.about__info-name{
     color: white;
     margin-bottom: 1.5rem;
 }
+.portfolios .portfolio-item .hover-items p{
+    font-size: 1.1rem;
+    color: white;
+    text-align: center;
+}
 
 .portfolios .portfolio-item .hover-items .icons {
     display: flex;
@@ -891,7 +896,7 @@ span.about__info-name{
  }
 
  /* for the skills row flexbox */
- @media(max-width:511.5px) {
+ @media(max-width:564px) {
 
      /* apply CSS til size is less than or equal to 768px */
      .skill__row {
