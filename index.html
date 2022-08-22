@@ -584,30 +584,30 @@
                     <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
                     <!-- ===== Contact Form =====-->
                     <div class="row">
-                        <div class="contact-form padd-15">
+                        <form class="contact-form padd-15" action="https://formspree.io/f/mayknyqa" method="POST" id="cont-form">
                             <div class="row">
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
+                                        <input type="text" class="form-control" name="Name" id="name" placeholder="Name" required>
                                     </div>
                                 </div>
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
+                                        <input type="email" class="form-control" id="email" name="Email" placeholder="Email" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject">
+                                        <input type="text" id="title" class="form-control" name="Subject" required placeholder="Subject" >
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                                        <textarea  class="form-control" id="message" name="Message" placeholder="Message" required></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -616,7 +616,7 @@
                                     <button type="submit" class="btn" style="cursor: pointer;">Send Message</button>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -647,6 +647,7 @@
     <!-- JS Files-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/style-switcher.js"></script>
 </body>
 </html>

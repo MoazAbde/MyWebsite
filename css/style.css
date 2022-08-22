@@ -37,12 +37,30 @@ body
 ul{
     list-style: none;
 }
-.section{
+/* old section (worked perfect)*/
+/* .section{
     background: var(--bg-black-900);
     min-height: 100vh;
     display: block;
     padding: 0 30px;
     opacity: 1;
+} */
+/* new sec test */
+.section {
+    background: var(--bg-black-900);
+    min-height: 100vh;
+    display: block;
+    padding: 0 30px;
+    opacity: 1;
+    /* Everything from below is new and can be removed */
+    left: 270px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.3s ease;
 }
 .hidden{
     display: none !important;
@@ -142,6 +160,7 @@ ul{
     justify-content: center;
     align-items: center;
     z-index: 10;
+    transition: all 0.3s ease;
 }
 
 .aside .logo{
@@ -200,6 +219,7 @@ ul{
     display: none;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease;
 }
 .aside .nav-toggler span {
     height: 2px;
@@ -208,6 +228,12 @@ ul{
     display: inline-block;
     position: relative;
 }
+/* for mobile device aside open/close icon start*/
+.aside .nav-toggler.open span
+{
+    background-color: transparent;
+}
+/* for mobile device aside open/close icon  end*/
 .aside .nav-toggler span::before {
     content: '';
     height: 2px;
@@ -217,6 +243,13 @@ ul{
     top: -6px;
     left: 0;
 }
+/* for mobile device aside open/close icon start */
+.aside .nav-toggler.open span::before
+{
+    transform: rotate(45deg);
+    top: 0;
+}
+/* for mobile device aside open/close end */
 .aside .nav-toggler span::after {
     content: '';
     height: 2px;
@@ -226,6 +259,12 @@ ul{
     top: 6px;
     left: 0;
 }
+/* for mobile device aside open/close icon start */
+.aside .nav-toggler.open span::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+/* for mobile device aside open/close icon end */
 .aside .nav
 {
     margin-top: 50px;
@@ -899,8 +938,7 @@ span.about__info-name{
 
 
 /* Media Query */
-@media (max-width:1199px)
-{
+@media (max-width:1199px) {
     .aside
     {
         left: -270px;
@@ -915,8 +953,9 @@ span.about__info-name{
         margin-left: 0;
     }
 }
- @media (max-width:991px)
- {
+
+
+@media (max-width:991px) {
     .contact .contact-info-item
     {
         flex: 0 0 50%;
@@ -931,9 +970,9 @@ span.about__info-name{
     {
         display: none;
     }
- }
- @media (max-width:767px)
- {
+}
+
+@media (max-width:767px) {
     .contact .contact-form .col-6,
     .contact .contact-info-item,
     .about .about-content .experience,
@@ -944,37 +983,45 @@ span.about__info-name{
         max-width: 100%;
     }
  
- }
+}
 
  /* for the skills row flexbox */
- @media(max-width:564px) {
+@media(max-width:564px) {    
 
-     /* apply CSS til size is less than or equal to 768px */
-     .skill__row {
-         flex-direction: column;
-         gap: 15px;
-         align-items: center;
-     }
- }
- @media (max-width:350px) {
+    /* apply CSS til size is less than or equal to 768px */
+    .skill__row {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .aside.open {
+        left: 0;
+    }
+
+    .aside .nav-toggler {
+        display: flex;
+        left: 30px;
+    }
+
+    .aside .nav-toggler.open {
+        left: 300px;
+    }
+
+    .section {
+        left: 0;
+    }
+
+    .section.open {
+        left: 270px;
+    }
+}
+
+@media (max-width:350px) {
     .about .about-content .about__info{
         display: none;
     }
- }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 /* portfolio style 2 media Query */
