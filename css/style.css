@@ -989,11 +989,6 @@ span.about__info-name{
 @media(max-width:564px) {    
 
     /* apply CSS til size is less than or equal to 768px */
-    .skill__row {
-        flex-direction: column;
-        gap: 15px;
-        align-items: center;
-    }
 
     .aside.open {
         left: 0;
@@ -1015,6 +1010,16 @@ span.about__info-name{
     .section.open {
         left: 270px;
     }
+}
+
+/* for the skills column display on small screens */
+@media(max-width:573px) {
+    /* apply CSS til size is less than or equal to 768px */
+    .skill__row {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        }
 }
 
 @media (max-width:350px) {
