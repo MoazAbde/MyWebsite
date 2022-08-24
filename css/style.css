@@ -1010,7 +1010,7 @@ span.about__info-name{
 }
 
 /* for the skills column display on small screens */
-@media(max-width:573px) {
+@media(max-width:576px) {
     /* apply CSS til size is less than or equal to 768px */
     .skill__row {
         flex-direction: column;
