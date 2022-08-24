@@ -146,7 +146,8 @@ ul{
 .shadow-dark{
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
-/*aside*/
+
+/* ======== aside ======== */
 .aside{
     width: 270px;
     background: var(--bg-black-100);
@@ -294,7 +295,7 @@ ul{
     margin-right: 15px;
 }
 
-/*home*/
+/* ======== home ======== */
 .home{
     min-height: 100vh;
     display: flex;
@@ -359,7 +360,7 @@ h3.my-profession{
     height: 400px;
 }
 
-/* About */
+/* ======== About ======== */
 .about .about-content{
     flex: 0 0 100%;
     max-width: 100%;
@@ -386,7 +387,7 @@ h3.my-profession{
 }
 
 
-/*other vid*/
+/* ======== Skills Section ======== */
 
 .grid {
     display: grid;
@@ -468,7 +469,7 @@ span.about__info-name{
     display: block;
 }
 
-/*skills*/
+/* ======== skills ======== */
 @media screen and (min-width: 768px) {
     .skillcont{
         margin-left: auto;
@@ -565,7 +566,7 @@ span.about__info-name{
     transform: rotate(-180deg);
 }
 
-/*Timeline*/
+/* ======== Timeline ======== */
 .about .about-content .education, 
 .about .about-content .experience
 {
@@ -657,7 +658,7 @@ span.about__info-name{
     color: var(--text-black-700);
 }
 
-/* Portfolio */
+/* ======== Portfolio ======== */
 
 .portfolio .container
 {
@@ -700,7 +701,7 @@ span.about__info-name{
     
 } */
 
-/* port style 2 */
+/* ======== port style 2 ========  */
 
 .portfolios {
     display: grid;
@@ -781,7 +782,7 @@ span.about__info-name{
     transform: scale(1);
 }
 
-/* testing new port */
+/* ======== portfolio text/text box ======== */
 .portfolios .portfolio-item {
     position: relative;
     background-color: var(--bg-black-50);
@@ -802,8 +803,6 @@ span.about__info-name{
     cursor: pointer;
     color: var(--text-black-900);
 }
-
-
 
 .portfolios .portfolio-item .port-text p {
     color: var(--text-black-700);
@@ -829,7 +828,7 @@ span.about__info-name{
         transition: all 0.4s ease-in-out;
 } */
 
-/* Contact */
+/* ======== Contact  ======== */
 .contact-title
 {
     color: var(--skin-color);
@@ -917,7 +916,7 @@ span.about__info-name{
     height: 50px;
     padding: 0 50px;
 }
-/* Scroll Bar */
+/* ======== Scroll Bar ======== */
 ::-webkit-scrollbar
 {
     width: 0.60rem;
@@ -937,7 +936,7 @@ span.about__info-name{
 
 
 
-/* Media Query */
+/* ======== Media Query ======== */
 @media (max-width:1199px) {
     .aside
     {
@@ -985,10 +984,8 @@ span.about__info-name{
  
 }
 
- /* for the skills row flexbox */
+ /* ======== Aside open/close on mobile devices ======== */
 @media(max-width:564px) {    
-
-    /* apply CSS til size is less than or equal to 768px */
 
     .aside.open {
         left: 0;
